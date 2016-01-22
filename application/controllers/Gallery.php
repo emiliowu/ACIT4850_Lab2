@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Gallery extends Application {
+class Gallery extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,8 +20,6 @@ class Gallery extends Application {
 	 */
 	public function index()
 	{
-		//$this->load->view('gallery');
-                                    $this->data['pagebody'] = 'Gallery';
-                                    $this->render();
+		$this->load->view('gallery');
 	}
 }
